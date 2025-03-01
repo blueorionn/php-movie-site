@@ -1,3 +1,9 @@
+# Project env
+node_modules/
+
+# Tailwind compiled css
+static/styles/styles.css
+
 # Ignore secrets
 .env
 .env.*
