@@ -1,6 +1,6 @@
 # PHP MOVIEDB SITE
 
-This is a fun project created for learning and experimenting with Flask and MYSQL. The goal is to build a simple movie and book database where users can add, search, and view details about their favorite movies and books.
+This is a fun project created for learning and experimenting with Php and MYSQL. The goal is to build a simple movie and book database where users can add, search, and view details about their favorite movies and books.
 
 ## Features
 
