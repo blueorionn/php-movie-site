@@ -5,12 +5,12 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "watchCss": "npx @tailwindcss/cli -i ./static/styles/tailwind.css -o ./static/styles/styles.css --watch"
+    "watchCss": "npx tailwindcss -i ./static/styles/tailwind.css -o ./static/styles/styles.css --watch",
+    "buildCss": "npx tailwindcss -i ./static/styles/tailwind.css -o ./static/styles/styles.css --minify"
   },
   "author": "Swadhin",
   "license": "MIT",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.0.9",
-    "tailwindcss": "^4.0.9"
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }
