@@ -12,8 +12,8 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  background-color: var(--default-dark);
-  color: var(--default-light);
+  background-color: var(--default-light);
+  color: var(--default-dark);
   font-family:
     "Inter var experimental",
     "Inter var",
