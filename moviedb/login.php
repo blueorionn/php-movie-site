@@ -1,3 +1,8 @@
+<?php
+session_start();
+require "config/connect.php"; // Include PDO Connection
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
