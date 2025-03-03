@@ -1,5 +1,6 @@
 # Project env
 node_modules/
+vendor
 
 # Tailwind compiled css
 static/styles/styles.css
