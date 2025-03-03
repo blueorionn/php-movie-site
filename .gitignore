@@ -8,9 +8,6 @@ static/styles/styles.css
 .env
 .env.*
 
-# Database dump files
-*.sql
-
 # Temporary files
 tmp/
 
