@@ -1,6 +1,10 @@
 <?php
-session_start();
 require "config/connect.php"; // Include PDO Connection
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -28,14 +32,13 @@ require "config/connect.php"; // Include PDO Connection
                         <label for="username" class="text-base py-2 text-purple-700">Username</label>
                         <input type="text" name="username" id="username" placeholder="username" required
                             class="rounded-sm border-purple-200 focus:ring-purple-500 p-2.5">
-                        <p class="text-red-500 text-sm py-1"></p>
                     </div>
                     <div class="py-2 flex flex-col">
                         <label for="password" class="text-base py-2 text-purple-700">Password</label>
                         <input type="password" name="password" id="password" required
                             class="rounded-sm border-purple-200 focus:ring-purple-500 p-2.5">
-                        <p class="text-red-500 text-sm py-1"></p>
                     </div>
+                    <p class="text-red-500 text-sm py-2"><?php if (isset($error)) echo "$error" ?></p>
                     <div class="py-4">
                         <button type="submit" class="w-full py-2.5 rounded font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-600 hover:to-cyan-600 text-white">Sign in</button>
                     </div>
