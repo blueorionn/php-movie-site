@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieDB - Collection of Movie Database</title>
-    <link rel="stylesheet" href="http://localhost:8000/styles/base.css">
-    <link rel="stylesheet" href="http://localhost:8000/styles/styles.css">
+    <link rel="stylesheet" href="/static/styles/base.css">
+    <link rel="stylesheet" href="/static/styles/styles.css">
 </head>
 
 <body>
