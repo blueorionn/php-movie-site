@@ -1,5 +1,5 @@
 <?php
-require "config/fetchmovies.php";
+require "config/movies.php";
 
 $mv = new Movies();
 $movies = $mv->getAllMovies();
