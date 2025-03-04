@@ -1,3 +1,13 @@
+CREATE TABLE IF NOT EXISTS movies (
+    id VARCHAR(36),
+    title VARCHAR(255),
+    release_year INT UNSIGNED,
+    rating FLOAT,
+    genre VARCHAR(255),
+    poster VARCHAR(255),
+    movie_description TEXT
+)
+
 INSERT INTO
     movies (
         id,
@@ -16,7 +26,7 @@ VALUES
         9.3,
         'Drama',
         'the-shawshank-redemption.jpg',
-        'Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the manO\'s unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red'
+        'Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man\'s unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red'
     ),
     (
         '9a761fb8-7465-4985-983d-5faceb3735f0',
@@ -25,7 +35,7 @@ VALUES
         9.2,
         'Crime',
         'the-godfather.jpg',
-        'The Godfather O\'DonO\' Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughterO\'s wedding. Michael, VitoO\'s youngest son and a decorated WWII Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business.'
+        'The Godfather \'Don\' Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughter\'s wedding. Michael, Vit\'s youngest son and a decorated WWII Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business.'
     ),
     (
         '7e3dc43a-4978-4d61-9c9b-d77d859b82a7',
@@ -52,7 +62,7 @@ VALUES
         8.6,
         'Fantasy',
         'spirited-away.jpg',
-        'During her familyo\'s move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches and spirits, and where humans are changed into beasts.'
+        'During her family\'s move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches and spirits, and where humans are changed into beasts.'
     ),
     (
         'f9c27545-fe3c-45f2-9544-879de45af5b8',
@@ -70,7 +80,7 @@ VALUES
         8.5,
         'Mystery',
         'the-prestige.jpg',
-        'Set in London in the 1800s, two rival magicians read each others diary containing the secrets of their magic tricks and personal life. As we go back in time when the diaries were written, both magicians become obsessed with their rivalO\'s best trick. The tricks, as shown to the audience, look the same, but neither magician can figure out how his opponent does it.'
+        'Set in London in the 1800s, two rival magicians read each others diary containing the secrets of their magic tricks and personal life. As we go back in time when the diaries were written, both magicians become obsessed with their rival\'s best trick. The tricks, as shown to the audience, look the same, but neither magician can figure out how his opponent does it.'
     ),
     (
         'e88ad8c6-649a-4f08-b2aa-98b02eab1f82',
@@ -133,11 +143,11 @@ VALUES
         8.1,
         'Political Thriller',
         'v-for-vendetta.jpg',
-        'In a future British dystopian society, a shadowy freedom fighter, known only by the alias of O\'VO\', plots to overthrow the tyrannical government - with the help of a young woman.'
+        'In a future British dystopian society, a shadowy freedom fighter, known only by the alias of \'V\', plots to overthrow the tyrannical government - with the help of a young woman.'
     ),
     (
         'd1eb419a-337f-4b02-b379-d6890aa01006',
-        'HowlO\'s Moving Castle',
+        'Howl\'s Moving Castle',
         2004,
         8.2,
         'Adventure',
