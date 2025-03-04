@@ -20,6 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $movie_description
     );
 }
+
+// hide p tag is message is none
+$message_class = "hide";
+if (isset($message))
+    $message_class = "";
 ?>
 
 <!DOCTYPE html>
@@ -43,16 +48,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main>
         <section class="w-full py-12">
             <div class="w-full pb-8">
-                <p class="w-max mx-auto p-2 rounded-md border-2 border-gray-400 text-gray-600" id="message">
+                <p class="w-max mx-auto p-2 rounded-md border-2 border-gray-400 text-gray-600 <?php echo "$message_class" ?>"
+                    id="message">
                     <?php if (isset($message))
                         echo "$message" ?>
+                        <script>
+                            const message = document.querySelector('p#message');
+                            setTimeout(() => {
+                                message.classList.add("hide")
+                            }, 2000)
+                        </script>
                     </p>
-                    <script>
-                        const message = document.querySelector('p#message');
-                        setTimeout(() => {
-                            message.classList.add("hide")
-                        }, 2000)
-                    </script>
                 </div>
                 <div class="max-w-screen-2xl mx-auto">
                     <h1 class="text-xl mx-auto w-max font-semibold text-gray-600">Create Movie Table</h1>
