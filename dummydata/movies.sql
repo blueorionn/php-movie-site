@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS movies (
-    id VARCHAR(36),
+    id VARCHAR(36) PRIMARY KEY,
     title VARCHAR(255),
     release_year INT UNSIGNED,
     rating FLOAT,
