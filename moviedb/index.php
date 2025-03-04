@@ -44,7 +44,7 @@ $movies = $mv->getAllMovies();
                         $escaped_title = htmlspecialchars($movie['title'], ENT_QUOTES, 'UTF-8');
 
                         echo "
-                        <a href='/update/{$movie['id']}' class='max-w-96 grid grid-cols-2 gap-4 group transition-all'>
+                        <a href='/update/?id={$movie['id']}' class='max-w-96 grid grid-cols-2 gap-4 group transition-all'>
                             <div>
                                 <img src='/static/images/{$movie['poster']}' alt='$escaped_title' class='h-auto w-full aspect-auto'>
                             </div>
